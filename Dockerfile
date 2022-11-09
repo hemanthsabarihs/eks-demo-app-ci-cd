@@ -8,5 +8,5 @@ WORKDIR /app
 
 EXPOSE 9000
 
-CMD ["server.js"]
+
 
