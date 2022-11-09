@@ -2,9 +2,9 @@ FROM tomcat
 
 RUN apt-get update && apt-get -y upgrade
 
-WORKDIR /app
-
 COPY . /app
+
+WORKDIR /app
 
 EXPOSE 9000
 
