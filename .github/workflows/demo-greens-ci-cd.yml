@@ -56,7 +56,7 @@ jobs:
         --remote-name
        chmod +x kubectl
        mv kubectl /usr/local/bin/
-       aws eks update-kubeconfig --name greens-cluster-cluster --region ap-south-1
+       aws eks update-kubeconfig --name greens-cluster-cluster --region us-east-2
        kubectl get pods
       
        sed -i "s|default/greens-demo|${{ env.RELEASE_IMAGE }}|g" k8s.yaml
