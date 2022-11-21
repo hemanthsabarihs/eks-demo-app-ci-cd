@@ -1,12 +1,8 @@
-FROM tomcat
-
-RUN apt-get update && apt-get -y upgrade
-
-COPY . /app
-
+FROM node:latest
 WORKDIR /app
-
+COPY . /app
+RUN npm install
 EXPOSE 9000
-
+CMD ["node", "server.js"]
 
 
